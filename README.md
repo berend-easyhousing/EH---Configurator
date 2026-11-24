@@ -1,3 +1,7 @@
+> **Moved.** The configurator now lives in the platform at https://app.easyhousing.org/configurator
+> (repo `berend-easyhousing/nextjs-with-supabase`, folder `apps/platform/app/(apps)/configurator`).
+> This site only forwards old links there (`vercel.json` → `redirects`). Don't change the code here.
+
 # EH Configurator
 
 A two-screen Next.js app for the **Easy Housing Configurator**. The user

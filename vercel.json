@@ -2,5 +2,15 @@
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "redirects": [
+    { "source": "/", "destination": "https://app.easyhousing.org/configurator", "permanent": false },
+    { "source": "/country", "destination": "https://app.easyhousing.org/configurator/country", "permanent": false },
+    { "source": "/configurator", "destination": "https://app.easyhousing.org/configurator/design", "permanent": false },
+    { "source": "/summary", "destination": "https://app.easyhousing.org/configurator/summary", "permanent": false },
+    { "source": "/legal/:path*", "destination": "https://app.easyhousing.org/configurator/legal/:path*", "permanent": false },
+    { "source": "/brand/:path*", "destination": "https://app.easyhousing.org/configurator/brand/:path*", "permanent": false },
+    { "source": "/floorplans/:path*", "destination": "https://app.easyhousing.org/configurator/floorplans/:path*", "permanent": false },
+    { "source": "/((?!_next/).*)", "destination": "https://app.easyhousing.org/configurator", "permanent": false }
+  ]
 }
